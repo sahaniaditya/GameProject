@@ -19,7 +19,7 @@
 - If a user breaks their high score, a **confetti animation** is triggered to celebrate their achievement.
 
 ### 4. User Data Storage (Backend Integration):
-- User data (username, past scores, and high scores) is saved to a database using **Node.js/Express** with either **MongoDB** or **MySQL**.
+- User data (username, past scores, and high scores) is saved to a database using **Node.js/Express** with either **MongoDB**.
 - All data is persistent across sessions and available once the user logs in again.
 
 ### 5. User Authentication:
@@ -30,8 +30,8 @@
 - Upon logging in, the system fetches the user's **past scores** and **high score** from the database and displays them on the screen.
 
 ### 7. Deployment:
-- The frontend is deployed using **Netlify** or **Vercel**.
-- The backend (Node.js/Express API) is deployed on **Heroku** or **Railway**.
+- The frontend is deployed using **Netlify**.
+- The backend (Node.js/Express API) is deployed on **Vercel**.
 
 ## Technologies Used
 
@@ -44,13 +44,13 @@
 
 ### Backend:
 - **Node.js** and **Express.js** for the server.
-- **MongoDB** (with **Mongoose**) or **MySQL** (with **Sequelize**) for data persistence.
+- **MongoDB** (with **Mongoose**)  for data persistence.
 - **JWT (JSON Web Token)** for secure user authentication.
 - **Bcrypt.js** for password hashing.
 
 ### Deployment:
-- **Netlify** or **Vercel** for frontend hosting.
-- **Heroku** or **Railway** for backend deployment.
+- **Netlify** for frontend hosting.
+- **Vercel**  for backend deployment.
 
 ## Project Structure
 
@@ -71,3 +71,48 @@
 │   │   └── index.js
 ├── README.md
 └── package.json
+
+```
+
+## Installation
+
+### Prerequisites
+- **Node.js** installed on your machine.
+- **MongoDB**  set up if you plan to use a database locally.
+
+### Backend Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sahaniaditya/GameProject.git
+   cd GameProject
+   cd backend
+   npm install
+
+   ```
+2. Create a .env file with the following environment variables:
+   ```bash
+
+   PORT=5000
+   DATABASE_URI=<paste link here>
+   JWT_SECRET=your-secret-key
+
+   ```
+3. Start the backend server:
+   ```bash
+   node index.js
+   ```
+4. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+5. Install Frontend Libraries
+   ```bash
+   npm install
+   ```
+6. Run the Fronted.
+   ```bash
+   npm run dev
+   ```
+
+
