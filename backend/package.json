@@ -4,7 +4,8 @@
   "description": "Game Website",
   "main": "i",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start":"node index.js"
   },
   "author": "ADITYA SAHANI",
   "license": "MIT",
