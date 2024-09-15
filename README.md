@@ -19,7 +19,7 @@
 - If a user breaks their high score, a **confetti animation** is triggered to celebrate their achievement.
 
 ### 4. User Data Storage (Backend Integration):
-- User data (username, past scores, and high scores) is saved to a database using **Node.js/Express** with either **MongoDB**.
+- User data (username, past scores, and high scores) is saved to a database using **Node.js/Express** with  **MongoDB**.
 - All data is persistent across sessions and available once the user logs in again.
 
 ### 5. User Authentication:
