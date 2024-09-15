@@ -14,7 +14,7 @@ const AuthState = (props) => {
   const [user, setUser] = useState(null);
 
   const login = async (email, password) => {
-    const url = "http://localhost:5000/api/auth/login";
+    const url = "https://gameproject-x2fm.onrender.com/api/auth/login";
     const response = await fetch(url, {
       method: "POST",
       headers: {
@@ -37,7 +37,7 @@ const AuthState = (props) => {
   };
 
   const signin = async (name, email, password) => {
-    const url = "http://localhost:5000/api/auth/signup";
+    const url = "https://gameproject-x2fm.onrender.com/api/auth/signup";
     const response = await fetch(url, {
       method: "POST",
       headers: {
@@ -63,7 +63,7 @@ const AuthState = (props) => {
   };
 
   const getuser = async () => {
-    const url = "http://localhost:5000/api/auth/getuser";
+    const url = "https://gameproject-x2fm.onrender.com/api/auth/getuser";
 
     const response = await fetch(url, {
       method: "GET",
@@ -79,7 +79,7 @@ const AuthState = (props) => {
   };
 
   const getuserbyid = async () => {
-    const url = "http://localhost:5000/api/auth/getuserbyid";
+    const url = "https://gameproject-x2fm.onrender.com/api/auth/getuserbyid";
 
     const response = await fetch(url, {
       method: "GET",

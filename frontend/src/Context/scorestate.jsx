@@ -8,7 +8,7 @@ const ScoreState = (props) => {
   const updateScore = async (score) => {
 
     console.log("In highest Score.")
-    const url = "http://localhost:5000/api/score/updatescore";
+    const url = "https://gameproject-x2fm.onrender.com/api/score/updatescore";
     const response = await fetch(url, {
       method: "PUT",
       headers: {
@@ -24,7 +24,7 @@ const ScoreState = (props) => {
   };
 
   const addScore = async (score) => {
-    const url = "http://localhost:5000/api/score/addscore";
+    const url = "https://gameproject-x2fm.onrender.com/api/score/addscore";
     const response = await fetch(url, {
       method: "POST",
       headers: {
@@ -40,7 +40,7 @@ const ScoreState = (props) => {
   };
 
   const getAllScores = async () => {
-    const url = "http://localhost:5000/api/score/getuserscore";
+    const url = "https://gameproject-x2fm.onrender.com/api/score/getuserscore";
 
     const response = await fetch(url, {
       method: "GET",
